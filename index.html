@@ -1,0 +1,52 @@
+<body>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+<div class="content">
+<h1>High Brow Insult Generator</h1>
+<p><strong>Note:</strong> Insults may not reflect the level of your current or expected brow height.</p>
+<h3 id="result"></h3>
+<input type="button" onclick="randomItems()" value="Generate!"><br />
+<div class="fb-like" data-href="https://lukeskylurker.github.io/my_game/random-fun.html" data-width="" data-layout="box_count" data-action="like" data-size="small" data-share="true"></div>
+</div>
+<script>
+function randomItems() {
+
+var itemsA = ["malodorus", "putrid", "repulsive", "noxious", "vile", "ill-favored", "loathsome", "huffish","bumptious","disdainful","solipstistic"];
+var randomItem1 = itemsA[Math.floor(Math.random() * itemsA.length)];
+console.log(randomItem1);
+var finalItem = randomItem1;
+
+var typeA = ["bothersome", "vexatious","exastperating","chafing","blustering","glowering","nettlesome","irksome","pestiferous","rebarbative", "pestilential","deleterious","pernicious","languid","somnolent", "indolent","shiftless","dilatory","flagging","repining","whimpering", "peevish"];
+var randomType1 = typeA[Math.floor(Math.random() * typeA.length)];
+console.log(randomType1);
+var finalType = randomType1;
+
+var lastA = ["clot","golem","lump","dunce","dolt","nit","dullard","cluck","bane","prig","laggard","cretin","dunderhead","stooge"];
+var randomLast1 = lastA[Math.floor(Math.random() * lastA.length)];
+console.log(randomLast1);
+var finalLast = randomLast1;
+
+var momA = ["misshapen","frightful","homely","beastly","regrettable","repulsive","foul","grisly","ghastly","crestfallen"];
+var momFirst = momA[Math.floor(Math.random() * momA.length)];
+console.log(momFirst);
+var finalMomA = momFirst;
+
+var momB = ["floss-forgetting","flatulance-blaming","paper-crinkling","oil-toting","pefume-abusing","banal-pushing","potato-consuming", "dog-slandering", "lizard-loving","IQ-lowering","turn-missing","fake-calling","story-stealing","high-beaming","plot-spoiling","humorless","shoe-soiling","refuse-hoarding","roach-attracting","kale-touting","child-slighting","penguine-hating","yawn-inducing","snail-mailing","rubbish-snorting","fashion-subversing","weather-hating","gratis-seeking","pox-producing","vermin-loving"];
+var momSecond = momB[Math.floor(Math.random() * momB.length)];
+console.log(momSecond);
+var finalMomB = momSecond;
+
+var momC = ["strumpet","tramp","courtesan","hussy","plot","trouser-rouser","smock","transient","gutterpup","floozy","flake","loon"];
+var momThird = momC[Math.floor(Math.random() * momC.length)];
+console.log(momThird);
+var finalMomC = momThird;
+
+
+
+document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+}
+</script>
+<style>
+	.content {
+		text-align: center;
+	}
