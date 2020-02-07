@@ -6,8 +6,8 @@
 <h1>Highbrow Insult Generator</h1>
 <p><strong>Note:</strong> Insults may not reflect the level of your current or expected brow height.</p>
 <h3 id="result"></h3>
-<input type="button" onclick="randomItems()" value="Generate!"><br /><br />
-<div class="fb-like" data-href="https://lukeskylurker.github.io/my_game/random-fun.html" data-width="" data-layout="box_count" data-action="like" data-size="small" data-share="true"></div>
+<input type="button" class="content-button" onclick="randomItems()" value="Generate!"><br /><br />
+<div class="fb-like" data-href="www.highbrowinsultgenerator.com" data-width="250px" data-layout="box_count" data-action="like" data-size="large" data-share="true"></div>
 </div>
 <script>
 function randomItems() {
@@ -50,4 +50,11 @@ document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ",
 <style>
 	.content {
 		text-align: center;
+		font-size: 2em;
+		padding-top: 100px;
 	}
+	.content-button {
+		text-align: center;
+		font-size: 2em;
+	}
+</style>
