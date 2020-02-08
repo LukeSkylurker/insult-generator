@@ -14,6 +14,7 @@
 	<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 <div class="content">
+	<img src="highbrow.png" width="160px">
 <h1>Highbrow Insult Generator</h1>
 <p><strong>Note:</strong> Insults may not reflect the level of your current or expected brow height.</p>
 <h3 id="result"></h3>
@@ -24,7 +25,7 @@
 <script>
 function randomItems() {
 
-var itemsA = ["malodorus", "putrid", "repulsive", "noxious", "vile", "ill-favored", "loathsome", "huffish","bumptious","disdainful","solipstistic"];
+var itemsA = ["malodorus", "putrid", "repulsive", "noxious", "vile", "ill-favored", "loathsome", "huffish","bumptious","disdainful","solipstistic","impish"];
 var randomItem1 = itemsA[Math.floor(Math.random() * itemsA.length)];
 console.log(randomItem1);
 var finalItem = randomItem1;
@@ -68,9 +69,12 @@ document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ",
 	.content {
 		text-align: center;
 		font-size: 1.7em;
-		padding-top: 3%;
+		padding-top: 1%;
 		font-family: Arial;
 		width: 100%;
+	}
+	.content h1 {
+		line-height: 0.9;
 	}
 	.content-button {
 		text-align: center;
