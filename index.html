@@ -29,36 +29,43 @@
 <div class="fb-like" data-href="www.highbrowinsultgenerator.com" data-width="" data-layout="button_count" data-action="like" data-size="large"></div><br /><br />
 
 <div class="fb-comments" data-href="https://highbrowinsultgenerator.com/" data-width="500" data-numposts="10"></div>
+	<div class="bottom-content">
+	<p>The Highbrow Insult Generator is meant to give people the opportunity to express their feelings without stooping to the level of their inferior counterparts. Press the "Generate!" button until you feel you find the insult that reflects the true severity of your displeasure.</p>
+	<p>If you should have any questions, or would like to see a word or phrase added, please feel free leave a comment in the section above.</p>
+	<p>The Highbrow Insult Generator will continue to undergo many iterations. Bookmark this page and check back often to see new functionality, words, and (of course) insults.
+	</p>
+	<p>Until we meet again... You sir/madame are a turgid, irksome cretin, and your mother is a grisly, vermin-loving plot.</p>
+	</div>
 </div>
 <script>
 function randomItems() {
 
-var itemsA = ["malodorus", "putrid", "repulsive", "noxious", "vile", "ill-favored", "loathsome", "huffish","bumptious","disdainful","solipstistic","bilious","sallow","cadaverous"];
+var itemsA = ["malodorus","putrid","repulsive","noxious","vile","ill-favored","loathsome","huffish","bumptious","disdainful","solipstistic","bilious","sallow","cadaverous","odious","bloated","turgid","tumescent","pedantic","execrable"];
 var randomItem1 = itemsA[Math.floor(Math.random() * itemsA.length)];
 console.log(randomItem1);
 var finalItem = randomItem1;
 
-var typeA = ["bothersome", "vexatious","exastperating","chafing","skulking","blustering","glowering","nettlesome","irksome","pestiferous","rebarbative", "pestilential","deleterious","pernicious","languid","somnolent", "indolent","shiftless","dilatory","flagging","repining","whimpering","peevish"];
+var typeA = ["bothersome", "vexatious","exastperating","chafing","skulking","blustering","glowering","nettlesome","irksome","pestiferous","rebarbative", "pestilential","deleterious","pernicious","languid","somnolent", "indolent","shiftless","dilatory","flagging","repining","whimpering","peevish","slovenly"];
 var randomType1 = typeA[Math.floor(Math.random() * typeA.length)];
 console.log(randomType1);
 var finalType = randomType1;
 
-var lastA = ["clot","golem","lump","dunce","dolt","nit","dullard","cluck","bane","prig","laggard","cretin","dunderhead","stooge"];
+var lastA = ["clot","golem","lump","dunce","dolt","nit","dullard","cluck","bane","prig","laggard","cretin","dunderhead","stooge","imp","oaf","ox","goon","cad","churl","philistine","lummox"];
 var randomLast1 = lastA[Math.floor(Math.random() * lastA.length)];
 console.log(randomLast1);
 var finalLast = randomLast1;
 
-var momA = ["misshapen","frightful","homely","beastly","regrettable","repulsive","foul","grisly","ghastly","crestfallen"];
+var momA = ["misshapen","frightful","homely","beastly","regrettable","repulsive","foul","grisly","ghastly","crestfallen","bedraggled"];
 var momFirst = momA[Math.floor(Math.random() * momA.length)];
 console.log(momFirst);
 var finalMomA = momFirst;
 
-var momB = ["floss-forgetting","flatulance-blaming","paper-crinkling","oil-toting","pefume-abusing","banal-pushing","potato-consuming", "dog-slandering", "lizard-loving","IQ-lowering","turn-missing","fake-calling","story-stealing","high-beaming","plot-spoiling","humorless","shoe-soiling","refuse-hoarding","roach-attracting","kale-touting","child-slighting","penguine-hating","yawn-inducing","snail-mailing","rubbish-snorting","fashion-subversing","weather-hating","gratis-seeking","pox-producing","vermin-loving","melon-thumping","mess-inducing","smile-thieving","soul-eroding","polyp-producing","kite-hating","baloon-popping","ranch-drizzling","sad-supplying","baby-scaring","name-mistaking","thunder-fussing","polish-drying","pantry-raiding","water-infusing","coupon-hoarding","salad-eschewing"];
+var momB = ["floss-forgetting","flatulance-blaming","paper-crinkling","oil-toting","pefume-abusing","banal-pushing","potato-consuming", "dog-slandering", "lizard-loving","IQ-lowering","turn-missing","fake-calling","story-stealing","high-beaming","plot-spoiling","humorless","shoe-soiling","refuse-hoarding","roach-attracting","kale-touting","child-slighting","penguine-hating","yawn-inducing","snail-mailing","rubbish-snorting","fashion-subversing","weather-hating","gratis-seeking","pox-producing","vermin-loving","melon-thumping","mess-inducing","smile-thieving","soul-eroding","polyp-producing","kite-hating","baloon-popping","ranch-drizzling","sad-supplying","baby-scaring","name-mistaking","thunder-fussing","polish-drying","pantry-raiding","water-infusing","coupon-hoarding","salad-eschewing","two-starring","purse-parading"];
 var momSecond = momB[Math.floor(Math.random() * momB.length)];
 console.log(momSecond);
 var finalMomB = momSecond;
 
-var momC = ["strumpet","tramp","courtesan","hussy","plot","trouser-rouser","smock","transient","gutterpup","floozy","flake","loon","glut"];
+var momC = ["strumpet","tramp","courtesan","hussy","plot","trouser-rouser","smock","transient","gutterpup","floozy","flake","loon","glut","frump",""];
 var momThird = momC[Math.floor(Math.random() * momC.length)];
 console.log(momThird);
 var finalMomC = momThird;
@@ -93,6 +100,23 @@ document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ",
 		font-size: 1.5em;
 		background-color: orange;
 		font-family: Arial;
+		border-radius: 5px;
+		border: 2px solid white;
 	}
+	.bottom-content {
+		width: 60%;
+		margin: auto;
+		background-color: #fff8d8;
+		padding: 1%;
+	}
+	.bottom-content p {
+	line-height: 1.2;
+		font-size: 1.0em;
+	}
+	@media only screen and (max-width: 600px) {
+  .bottom-content {
+    width:90%;
+  }
+}
 	
 </style>
