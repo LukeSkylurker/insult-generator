@@ -20,12 +20,14 @@
 	<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 <div class="content">
-	<img src="highbrow.png" width="160px">
+	<img src="highbrow.png" width="150px">
 <h1>Highbrow Insult Generator</h1>
 <p><strong>Note:</strong> Insults may not reflect the level of your current or expected brow height.</p>
 <h3 id="result"></h3>
 <input type="button" class="content-button" onclick="randomItems()" value="Generate!"><br /><br />
-<div class="fb-share-button" data-href="https://highbrowinsultgenerator.com" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhighbrowinsultgenerator.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div><br /><br />
+<div onclick="responsiveVoice.speak(document.getElementById('result').innerHTML)" 
+type="button" value="Play"><img src="play.png" width="100"></div><br />
+<div style="margin-bottom: 10px;" class="fb-share-button" data-href="https://highbrowinsultgenerator.com" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhighbrowinsultgenerator.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div><br />
 <div class="fb-like" data-href="www.highbrowinsultgenerator.com" data-width="" data-layout="button_count" data-action="like" data-size="large"></div><br /><br />
 
 <div class="fb-comments" data-href="https://highbrowinsultgenerator.com/" data-width="500" data-numposts="10"></div>
@@ -73,19 +75,18 @@ console.log(momThird);
 var finalMomC = momThird;
 
 
-
+ 
 document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+
+
 }
 </script>
 
-<script>
-
-</script>
 
 <style>
 	.content {
 		text-align: center;
-		font-size: 1.7em;
+		font-size: 1.6em;
 		padding-top: 1%;
 		font-family: Arial;
 		width: 100%;
