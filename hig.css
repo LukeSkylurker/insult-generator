@@ -1,0 +1,35 @@
+.content {
+		text-align: center;
+		font-size: 1.6em;
+		margin-top: 4%;
+		font-family: Arial;
+		width: 100%;
+	}
+	
+	
+	.content-button {
+		text-align: center;
+		
+		background-color: orange;
+		font-family: Arial;
+		border-radius: 5px;
+		border: 2px solid white;
+	}
+	.bottom-content {
+		width: 60%;
+		margin: auto;
+		background-color: #fff8d8;
+		padding: 1%;
+	}
+	.content-button {
+		font-size: 1.5em;
+	}
+	
+	@media only screen and (max-width: 600px) {
+  .bottom-content {
+    width:90%;
+  }
+  .content {
+  	margin-top: 11%;
+  }
+}
