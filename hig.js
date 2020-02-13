@@ -41,7 +41,7 @@ var randomItem1 = itemsA[Math.floor(Math.random() * itemsA.length)];
 console.log(randomItem1);
 var finalItem = randomItem1;
 
-var typeA = ["suprisingly adequate","pleasantly palatable","adequately unpredictable","provisionally humorous","nearly exceptional","enviably consistent", "quite endurable", "passably tenuous"];
+var typeA = ["surprisingly adequate","pleasantly palatable","adequately unpredictable","provisionally humorous","nearly exceptional","enviably consistent", "quite endurable", "passably tenuous"];
 var randomType1 = typeA[Math.floor(Math.random() * typeA.length)];
 console.log(randomType1);
 var finalType = randomType1;
