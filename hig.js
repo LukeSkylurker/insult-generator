@@ -10,7 +10,7 @@ var randomType1 = typeA[Math.floor(Math.random() * typeA.length)];
 console.log(randomType1);
 var finalType = randomType1;
 
-var lastA = ["clot","golem","lump","dunce","dolt","nit","dullard","cluck","bane","prig","laggard","cretin","dunderhead","stooge","imp","oaf","ox","goon","cad","churl","philistine","lummox"];22
+var lastA = ["clot","golem","lump","dunce","dolt","nit","dullard","cluck","bane","plonk","prig","laggard","cretin","dunderhead","stooge","imp","oaf","ox","goon","cad","churl","philistine","lummox"];22
 var randomLast1 = lastA[Math.floor(Math.random() * lastA.length)];
 console.log(randomLast1);
 var finalLast = randomLast1;
@@ -20,7 +20,7 @@ var momFirst = momA[Math.floor(Math.random() * momA.length)];
 console.log(momFirst);
 var finalMomA = momFirst;
 
-var momB = ["floss-forgetting","flatulance-blaming","paper-crinkling","oil-toting","pefume-abusing","banal-pushing","potato-consuming", "dog-slandering", "lizard-loving","IQ-lowering","turn-missing","fake-calling","story-stealing","high-beaming","plot-spoiling","humorless","shoe-soiling","refuse-hoarding","roach-attracting","kale-touting","child-slighting","penguine-hating","yawn-inducing","snail-mailing","rubbish-snorting","fashion-subversing","weather-hating","gratis-seeking","pox-producing","vermin-loving","melon-thumping","mess-inducing","non-googling","milk-smelling","smile-thieving","soul-eroding","smirk-producing","kite-hating","baloon-popping","ranch-drizzling","sob-supplying","baby-scaring","name-mistaking","thunder-fussing","polish-drying","pantry-raiding","water-infusing","coupon-hoarding","salad-eschewing","two-starring","purse-parading","coffee-shunning","neighbor-casing","chore-enforcing","book-annotating"];
+var momB = ["floss-forgetting","flatulance-blaming","paper-crinkling","gesticulation-distorting","oil-toting","pefume-abusing","banal-pushing","potato-consuming", "dog-slandering", "lizard-loving","IQ-lowering","turn-missing","fake-calling","story-stealing","high-beaming","plot-spoiling","humorless","shoe-soiling","refuse-hoarding","roach-attracting","kale-touting","child-slighting","penguine-hating","yawn-inducing","snail-mailing","rubbish-snorting","fashion-subversing","weather-hating","gratis-seeking","pox-producing","vermin-loving","melon-thumping","mess-inducing","non-googling","milk-smelling","smile-thieving","soul-eroding","smirk-producing","kite-hating","baloon-popping","ranch-drizzling","sob-supplying","baby-scaring","name-mistaking","thunder-fussing","polish-drying","pantry-raiding","water-infusing","coupon-hoarding","salad-eschewing","two-starring","purse-parading","coffee-shunning","neighbor-casing","chore-enforcing","book-annotating"];
 var momSecond = momB[Math.floor(Math.random() * momB.length)];
 console.log(momSecond);
 var finalMomB = momSecond;
