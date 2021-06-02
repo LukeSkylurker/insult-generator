@@ -48,3 +48,39 @@ var finalType = randomType1;
  
 document.getElementById('result').innerHTML = "Your " + finalItem + finalType;
 }
+
+function randomItemsPotty() {
+
+var itemsA = ["farty","poopy","slimy","sludgy","smelly","stinky","gross","sweaty","grimey"];
+var randomItem1 = itemsA[Math.floor(Math.random() * itemsA.length)];
+console.log(randomItem1);
+var finalItem = randomItem1;
+
+var typeA = ["poop-faced","fart-headed","farting","puke-mouthed","scum-sucking","underwear staining","toilet-clogging","toot-generating","meatloaf-scarfing","booger-eating","nose-picking","barf-producing","wart-snorting","pimple-popping","gag-inducing","turd-swirling"];
+var randomType1 = typeA[Math.floor(Math.random() * typeA.length)];
+console.log(randomType1);
+var finalType = randomType1;
+
+var lastA = ["poopy-butt","peepee head","bubble fart","maggot monster","slug swallower"];
+var randomLast1 = lastA[Math.floor(Math.random() * lastA.length)];
+console.log(randomLast1);
+var finalLast = randomLast1;
+
+var momA = ["puss-squeezing","gas-passing","skunk-shaming","onion-eating","garlic-breathing","snot-inspecting","silent-farting"];
+var momFirst = momA[Math.floor(Math.random() * momA.length)];
+console.log(momFirst);
+var finalMomA = momFirst;
+
+var momB = ["flatulance-blaming","sludge-loving","poop-pushing","pepto-popping", "pant-soiling","mold-munching","trash-snorting","pox-producing","vermin-breeding","milk-smelling","drool-drizzling"];
+var momSecond = momB[Math.floor(Math.random() * momB.length)];
+console.log(momSecond);
+var finalMomB = momSecond;
+
+var momC = ["gas passer","diarhea disaster","mildew licker","pile of gangreen","urine swirler","potato pooper","booger blower"];
+var momThird = momC[Math.floor(Math.random() * momC.length)];
+console.log(momThird);
+var finalMomC = momThird;
+ 
+document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+
+}
