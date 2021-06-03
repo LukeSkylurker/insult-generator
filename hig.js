@@ -76,7 +76,7 @@ var momSecond = momB[Math.floor(Math.random() * momB.length)];
 console.log(momSecond);
 var finalMomB = momSecond;
 
-var momC = ["gas passer","diarhea disaster","mildew licker","pile of gangreen","urine swirler","potato pooper","booger blower","pot licker","moist armpit","spit sprayer","loogy launcher","grime gremlin","pox picker","gunk flinger"];
+var momC = ["gas passer","diarhea disaster","mildew licker","pile of gangreen","urine swirler","potato pooper","booger blower","pot licker","moist armpit","spit sprayer","loogy launcher","grime gremlin","pox picker","gunk flinger", "party pooper","egg dropper","smog sommelier","mucous membrane","burp swallower"];
 var momThird = momC[Math.floor(Math.random() * momC.length)];
 console.log(momThird);
 var finalMomC = momThird;
