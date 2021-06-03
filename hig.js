@@ -1,5 +1,15 @@
 function randomItemsHig() {
 
+var insultee;
+console.log($('#insultee').val());
+if ($('#insultee').val() !== "") {
+insultee = $('#insultee').val() + ", you are a ";
+}
+else {
+insultee = "You sir, are a "
+console.log(insultee);
+}
+
 var itemsA = ["malodorus","putrid","repulsive","noxious","dubitable","vile","ill-favored","loathsome","huffish","bumptious","disdainful","solipstistic","bilious","sallow","cadaverous","odious","bloated","turgid","tumescent","pedantic","execrable"];
 var randomItem1 = itemsA[Math.floor(Math.random() * itemsA.length)];
 console.log(randomItem1);
@@ -30,7 +40,7 @@ var momThird = momC[Math.floor(Math.random() * momC.length)];
 console.log(momThird);
 var finalMomC = momThird;
  
-document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+document.getElementById('result').innerHTML = insultee + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
 
 }
 
@@ -81,6 +91,16 @@ var momThird = momC[Math.floor(Math.random() * momC.length)];
 console.log(momThird);
 var finalMomC = momThird;
  
-document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+document.getElementById('result').innerHTML = "are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
 
+}
+
+function myShareFunction() {
+function share(score){
+
+var insultShare = document.getElementById('result').innerHTML;
+
+var desc=encodeURIComponent(insultShare); 
+window.open("https://www.facebook.com/sharer.php?u=www.highbrowinsultgenerator.com&Insult="+desc); 
+}
 }

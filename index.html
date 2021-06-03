@@ -65,8 +65,10 @@
 <div class="content">
 	<img src="highbrow.png" width="150px">
 <h1>Highbrow Insult Generator</h1>
-<p><strong>Note:</strong> Insults may not reflect the level of your current or expected brow height.</p>
+<p><strong>Name of Insultee</strong></p>
+<input type="text" id="insultee" maxlength="32">
 <h3 id="result"></h3>
+
 <input type="button" class="content-button" onclick="randomItemsHig()" value="Generate!"><br /><br />
 <div id="play-voice" onclick="myVoice()" 
 type="button" value="Play"><img src="play.png" width="65"></div><br />
@@ -80,6 +82,16 @@ type="button" value="Play"><img src="play.png" width="65"></div><br />
 	<p>The Highbrow Insult Generator will continue to undergo many iterations. Bookmark this page and check back often to see new functionality, words, and (of course) insults.
 	</p>
 	<p>With over 125 million variations of quality highbrow insults, the opportunity for insults has never been greater!</p><p> Until we meet again... You sir/madame are a turgid, irksome cretin, and your mother is a grisly, vermin-loving plot.</p>
+  <script>
+function myShareFunction() {
+function share(score){
+var insultShare = document.getElementById('result').innerHTML;
+var desc=encodeURIComponent(insultShare); 
+window.open("https://www.facebook.com/sharer.php?u=www.highbrowinsultgenerator.com&Insult="+desc); 
+}
+}
+</script>
+<input onclick="myShareFunction()" type="button" value="test fb">
 	</div>
 </div>
 <script>function myVoice() {
