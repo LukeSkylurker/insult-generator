@@ -96,11 +96,12 @@ document.getElementById('result').innerHTML = "are a " + finalItem + ", " + fina
 }
 
 function myShareFunction() {
-function share(score){
+function share(){
 
 var insultShare = document.getElementById('result').innerHTML;
 
 var desc=encodeURIComponent(insultShare); 
 window.open("https://www.facebook.com/sharer.php?u=www.highbrowinsultgenerator.com&Insult="+desc); 
 }
+share();
 }
