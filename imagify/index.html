@@ -1,0 +1,63 @@
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<div id="capture">
+<div class="image-and-text-contain">
+	<div class="utility-block img-container">
+	<img src="../grumps.png" width="200px">
+	</div>
+	<div class="utility-block" id="from-url"></div>
+</div>
+<script>
+	const queryString = window.location.search;
+	console.log(queryString);
+	const urlParams = new URLSearchParams(queryString);
+	const product = urlParams.get('mykey')
+	document.getElementById('from-url').innerHTML = product;
+	function getImage() {
+		html2canvas(document.querySelector("#capture")).then(canvas => {
+    document.body.appendChild(canvas)
+    $('#capture').hide();
+    $('#create-img').html('Done!');
+});
+	}
+</script>
+<style>
+	.utility-block {
+		display:  inline-block;
+		width:  280px;
+		font-size:  1.8em;
+		font-family: monospace;
+		vertical-align: text-top;
+		margin-top:  40px;
+		}
+	#from-url {
+		text-align: left;
+		padding-top:  30px;
+		margin-left: -10px;
+		padding-right: 20px;
+		width: 300px;
+	}
+	.image-and-text-contain {
+		text-align: center;
+		background: #DEC197;
+		width: 640px;
+		border-radius:12px;
+		border:  2px solid black;
+	}
+	.img-container {
+		padding-bottom: 15px;
+		margin-left:  -30px;
+	}
+</style>
+</div>
+<button class="play-audio" onclick="myVoice()">Play Audio</button>
+<script>
+	const canvas = $('canvas').html();
+</script>
+<script>function myVoice() {
+  responsiveVoice.speak(document.getElementById('from-url').innerHTML);
+}</script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=PT0jTJCu"></script>
+<!--
+<button onclick="getImage()" id="create-img">Create Save-able Image</button><button>Copy Url</button>-->
+

@@ -42,6 +42,13 @@ var finalMomC = momThird;
  
 document.getElementById('result').innerHTML = insultee + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
 
+var urlAppend = insultee + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+
+localStorage.setItem('test', urlAppend);
+var urlFetchLs = localStorage.getItem('test');
+var keyA = 'imagify/index.html?mykey=' + urlFetchLs;
+console.log(keyA);
+location.href = keyA;
 }
 
 function randomItemsCC() {
@@ -93,15 +100,4 @@ var finalMomC = momThird;
  
 document.getElementById('result').innerHTML = "are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
 
-}
-
-function myShareFunction() {
-function share(){
-
-var insultShare = document.getElementById('result').innerHTML;
-
-var desc=encodeURIComponent(insultShare); 
-window.open("https://www.facebook.com/sharer.php?u=www.highbrowinsultgenerator.com&Insult="+desc); 
-}
-share();
 }

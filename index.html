@@ -1,5 +1,6 @@
 <html>
-<head><script data-ad-client="ca-pub-6583584807545556" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<head>
+<script data-ad-client="ca-pub-6583584807545556" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147751564-2"></script>
 <script>
@@ -69,10 +70,32 @@
 <input type="text" id="insultee" maxlength="32">
 <h3 id="result"></h3>
 
-<input type="button" class="content-button" onclick="randomItemsHig()" value="Generate!"><br /><br />
-<div id="play-voice" onclick="myVoice()" 
-type="button" value="Play"><img src="play.png" width="65"></div><br />
-<div style="margin-bottom: 10px;" class="fb-share-button" data-href="https://highbrowinsultgenerator.com" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhighbrowinsultgenerator.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div><br />
+<script>
+/*function urlMaker() {
+var urlFetchLs = localStorage.getItem('test');
+var keyA = 'imagify/index.html?mykey=' + urlFetchLs;
+console.log(keyA);
+location.href = keyA;
+}*/
+</script>
+
+<input type="button" class="content-button" onclick="randomItemsHig()" value="Generate!"><br />
+<!--<button class="different" onclick="urlMaker()"></button>-->
+<br />
+<!--<div id="play-voice" onclick="myVoice()" 
+type="button" value="Play">
+  <img src="play.png" width="65">
+</div>-->
+<script>function myVoice() {
+  responsiveVoice.speak(document.getElementById('result').innerHTML);
+}</script>
+<br />
+<div style="margin-bottom: 10px;" class="fb-share-button" data-href="https://highbrowinsultgenerator.com" data-layout="button_count" data-size="large">
+  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhighbrowinsultgenerator.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+    Share
+  </a>
+</div>
+<br />
 <div class="fb-like" data-href="www.highbrowinsultgenerator.com" data-width="" data-layout="button_count" data-action="like" data-size="large"></div><br /><br />
 
 <div class="fb-comments" data-href="https://highbrowinsultgenerator.com/" data-width="500" data-numposts="5"></div>
@@ -82,21 +105,6 @@ type="button" value="Play"><img src="play.png" width="65"></div><br />
 	<p>The Highbrow Insult Generator will continue to undergo many iterations. Bookmark this page and check back often to see new functionality, words, and (of course) insults.
 	</p>
 	<p>With over 125 million variations of quality highbrow insults, the opportunity for insults has never been greater!</p><p> Until we meet again... You sir/madame are a turgid, irksome cretin, and your mother is a grisly, vermin-loving plot.</p>
-  <script>
-function myShareFunction() {
-function share(score){
-var insultShare = document.getElementById('result').innerHTML;
-var desc=encodeURIComponent(insultShare); 
-window.open("https://www.facebook.com/sharer.php?u=www.highbrowinsultgenerator.com&Insult="+desc); 
-}
-}
-</script>
-<input onclick="myShareFunction()" type="button" value="test fb">
-	</div>
-</div>
-<script>function myVoice() {
-	responsiveVoice.speak(document.getElementById('result').innerHTML);
-}</script>
 <script src="https://code.responsivevoice.org/responsivevoice.js?key=PT0jTJCu"></script>
 </body>
 </html>
