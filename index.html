@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-147751564-2');
 </script>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -64,7 +63,20 @@
 	<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 <div class="content">
-	<img src="highbrow.png" width="150px">
+	<img src="highbrow.png" class="rotate" width="110px">
+<style>
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+</style>
 <h1>Highbrow Insult Generator</h1>
 <p><strong>Name of Insultee</strong></p>
 <input type="text" id="insultee" maxlength="32">
