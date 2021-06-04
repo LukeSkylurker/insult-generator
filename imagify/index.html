@@ -67,6 +67,7 @@
 		border-radius: 8px;
 		padding: 12px;
 		margin-top:  10px;
+		width: 220px;
 	}
 @media screen and (max-width: 900px) {
 		.utility-block {
@@ -108,6 +109,7 @@
 		border-radius: 8px;
 		padding: 12px;
 		margin-top:  10px;
+		width: 51%;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -117,13 +119,16 @@
 	#from-url {
 		padding-top: 10px;
 	}
+	.play-audio {
+		width: 80%;
+	}
 	}
 </style>
 </div>
 </body>
-<button class="play-audio" onclick="myVoice()">Play Audio</button>
-<a href="../index.html"><button class="play-audio">Create New Insult</button></a>
-<button class="play-audio" onclick="urlCopyToClipBoard()">Copy URL</button>
+<button class="play-audio" onclick="myVoice()">Audio &#9887;</button>
+<a href="../index.html"><button class="play-audio">Create &#10010;</button></a>
+<button class="play-audio" onclick="urlCopyToClipBoard()">Copy URL &#10064;</button>
 <script>
 	const canvas = $('canvas').html();
 </script>
