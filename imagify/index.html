@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='icon' href='../highbrow.png' type='image/x-icon'/ >
  <title>Highbrow Insult Generator</title>
  <meta name="description" content="You have a personalized insult waiting!">
@@ -12,9 +13,9 @@
 <div id="capture">
 <div class="image-and-text-contain">
 	<div class="utility-block img-container">
-	<img src="../grumps.png" width="200px">
+	<img src="../grumps.png" width="60%">
 	</div>
-	<div class="utility-block" id="from-url"></div>
+	<div class="utility-block url-block" id="from-url"></div>
 </div>
 <script>
 	const queryString = window.location.search;
@@ -51,6 +52,7 @@
 		text-align: left;
 		background: #DEC197;
 		width: 890px;
+		max-width: 98%;
 		border-radius:12px;
 		border:  2px solid black;
 	}
@@ -65,6 +67,56 @@
 		border-radius: 8px;
 		padding: 12px;
 		margin-top:  10px;
+	}
+@media screen and (max-width: 900px) {
+		.utility-block {
+		display:  inline-block;
+		width:  95%;
+		font-size:  2.2em;
+		font-family: monospace;
+		vertical-align: text-top;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		}
+	#from-url {
+		text-align: left;
+		margin-left: 2%;
+		padding-right: 2%;
+		width: 73%;
+		padding-bottom: 4%;
+	}
+	.image-and-text-contain {
+		text-align: left;
+		background: #DEC197;
+		width: 100%;
+		border-radius:12px;
+		border:  2px solid black;
+	}
+	.img-container {
+		padding-bottom: 0px;
+		margin-left:  10px;
+		padding-top: 20px;
+		width:  14%;
+	}
+	.img-container img {
+		width: 100%;
+	}
+	.play-audio {
+		font-size: 28px;
+		background: green;
+		color: white;
+		border-radius: 8px;
+		padding: 12px;
+		margin-top:  10px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.utility-block {
+		font-size:  1.6em;
+		}
+	#from-url {
+		padding-top: 10px;
+	}
 	}
 </style>
 </div>
