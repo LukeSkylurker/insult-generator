@@ -1,5 +1,16 @@
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel='icon' href='highbrow.png' type='image/x-icon'/ >
+ <title>Highbrow Insult Generator</title>
+ <meta name="description" content="You have a personalized insult waiting">
+ <meta name="keywords" content="insult generator">
+ <meta name="author" content="Luke Arrington">
+ <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
 <div id="capture">
 <div class="image-and-text-contain">
 	<div class="utility-block img-container">
@@ -59,6 +70,7 @@
 	}
 </style>
 </div>
+</body>
 <button class="play-audio" onclick="myVoice()">Play Audio</button>
 <a href="../index.html"><button class="play-audio">Create New Insult</button></a>
 <button class="play-audio" onclick="urlCopyToClipBoard()">Copy URL</button>
@@ -71,9 +83,7 @@
 <script>
 function urlCopyToClipBoard() {
   var copyText = window.location.href;
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
+  navigator.clipboard.writeText(copyText);
 }
 </script>
 <script src="https://code.responsivevoice.org/responsivevoice.js?key=PT0jTJCu"></script>
