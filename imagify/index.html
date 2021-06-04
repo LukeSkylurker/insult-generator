@@ -50,22 +50,32 @@
 		margin-left:  30px;
 	}
 	.play-audio {
-		font-size: 18px;
+		font-size: 28px;
 		background: green;
 		color: white;
 		border-radius: 8px;
-		padding: 6px;
+		padding: 12px;
 		margin-top:  10px;
 	}
 </style>
 </div>
 <button class="play-audio" onclick="myVoice()">Play Audio</button>
+<a href="../index.html"><button class="play-audio">Create New Insult</button></a>
+<button class="play-audio" onclick="urlCopyToClipBoard()">Copy URL</button>
 <script>
 	const canvas = $('canvas').html();
 </script>
 <script>function myVoice() {
   responsiveVoice.speak(document.getElementById('from-url').innerHTML);
 }</script>
+<script>
+function urlCopyToClipBoard() {
+  var copyText = window.location.href;
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
 <script src="https://code.responsivevoice.org/responsivevoice.js?key=PT0jTJCu"></script>
 <!--
 <button onclick="getImage()" id="create-img">Create Save-able Image</button><button>Copy Url</button>-->
