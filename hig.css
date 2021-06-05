@@ -5,14 +5,11 @@
 		font-family: Arial;
 		width: 100%;
 	}
-	
-	
 	.content-button {
 		text-align: center;
-		
 		background-color: orange;
 		font-family: Arial;
-		border-radius: 5px;
+		border-radius: 12px;
 		border: 2px solid white;
 	}
 	.bottom-content {

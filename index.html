@@ -79,7 +79,7 @@
 </style>
 <h1>Highbrow Insult Generator</h1>
 <p><strong>Name of Insultee</strong></p>
-<input type="text" id="insultee" maxlength="32">
+<input type="text" id="insultee" maxlength="32" style="border-radius: 12px;">
 <h3 id="result"></h3>
 
 <script>
@@ -91,13 +91,17 @@ location.href = keyA;
 }*/
 </script>
 
-<input type="button" class="content-button" onclick="randomItemsHig()" value="Generate!"><br />
+<input type="button" class="content-button" onclick="randomItemsHig()" value="Generate"><br />
 <!--<button class="different" onclick="urlMaker()"></button>-->
 <br />
+<!--
 <div id="play-voice" onclick="myVoice()" 
-type="button" value="Play">
-  <img src="play.png" width="65">
+type="button" value="Play" style="text-align: center;">
+<div> 
+&#128264;
 </div>
+  <img src="play.png" width="65">
+</div>-->
 <script>function myVoice() {
   responsiveVoice.speak(document.getElementById('result').innerHTML);
 }</script>
@@ -117,6 +121,8 @@ type="button" value="Play">
 	<p>The Highbrow Insult Generator will continue to undergo many iterations. Bookmark this page and check back often to see new functionality, words, and (of course) insults.
 	</p>
 	<p>With over 125 million variations of quality highbrow insults, the opportunity for insults has never been greater!</p><p> Until we meet again... You sir/madame are a turgid, irksome cretin, and your mother is a grisly, vermin-loving plot.</p>
+</div>
+</div>
 <script src="https://code.responsivevoice.org/responsivevoice.js?key=PT0jTJCu"></script>
 </body>
 </html>
