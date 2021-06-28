@@ -68,6 +68,16 @@ document.getElementById('result').innerHTML = "Your " + finalItem + finalType;
 
 function randomItemsPotty() {
 
+var insultee;
+console.log($('#insultee').val());
+if ($('#insultee').val() !== "") {
+insultee = $('#insultee').val() + ", you are a ";
+}
+else {
+insultee = "You sir, are a "
+console.log(insultee);
+}
+
 var itemsA = ["farty","poopy","slimy","sludgy","smelly","stinky","gross","sweaty","grimey"];
 var randomItem1 = itemsA[Math.floor(Math.random() * itemsA.length)];
 console.log(randomItem1);
@@ -98,6 +108,14 @@ var momThird = momC[Math.floor(Math.random() * momC.length)];
 console.log(momThird);
 var finalMomC = momThird;
  
-document.getElementById('result').innerHTML = "You sir, are a " + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+document.getElementById('result').innerHTML = insultee + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+
+var urlAppend = insultee + finalItem + ", " + finalType + " " + finalLast + ", and your mother is a " + finalMomA + ", " + finalMomB + " " + finalMomC;
+
+localStorage.setItem('test', urlAppend);
+var urlFetchLs = localStorage.getItem('test');
+var keyA = 'imagify/index.html?mykey=' + urlFetchLs;
+console.log(keyA);
+location.href = keyA;
 
 }
