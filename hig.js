@@ -1,5 +1,7 @@
 function randomItemsHig() {
 
+ga('send', 'event', 'highbrow', 'click', 'fun', 'lots');
+
 var insultee;
 console.log($('#insultee').val());
 if ($('#insultee').val() !== "") {
