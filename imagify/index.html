@@ -27,11 +27,18 @@ ga('send', 'pageview');
  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-	function gaTrack() {
+	function gaTrackA() {
 if ("ga" in window) {
     tracker = ga.getAll()[0];
     if (tracker)
         tracker.send("event", "Test", "Test GA");
+}
+}
+	function gaTrackB() {
+if ("ga" in window) {
+    tracker = ga.getAll()[0];
+    if (tracker)
+        tracker.send("event", "TestB", "Test B");
 }
 }
 </script>
@@ -39,8 +46,8 @@ if ("ga" in window) {
 <body>
 <div id="capture">
 <div class="image-and-text-contain">
-	<div class="utility-block img-container" onClick="gaTrack()">
-	<img src="../grumps.png" width="60%" onClick="gaTrack()">
+	<div class="utility-block img-container">
+	<img src="../grumps.png" width="60%" onClick="gaTrackA()">
 	</div>
 	<div class="utility-block url-block" id="from-url"></div>
 </div>
@@ -162,7 +169,7 @@ if ("ga" in window) {
 </div>
 </body>
 <button class="play-audio" onclick="myVoice()">Audio &#x269F;</button>
-<a href="../index.html"><button class="play-audio">Create &#10010;</button></a>
+<a href="../index.html" onClick="gaTrackB()"><button class="play-audio">Create &#10010;</button></a>
 <button class="play-audio" onclick="urlCopyToClipBoard()">Copy URL &#10064;</button>
 <script>
 	const canvas = $('canvas').html();
