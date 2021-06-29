@@ -26,12 +26,21 @@ ga('send', 'pageview');
  <meta name="author" content="Luke Arrington">
  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	function gaTrack() {
+if ("ga" in window) {
+    tracker = ga.getAll()[0];
+    if (tracker)
+        tracker.send("event", "Test", "Test GA");
+}
+}
+</script>
 </head>
 <body>
 <div id="capture">
 <div class="image-and-text-contain">
-	<div class="utility-block img-container" onClick="ga('send', 'event', 'highbrow', 'click', 'fun', 'lots');">
-	<img src="../grumps.png" width="60%">
+	<div class="utility-block img-container" onClick="gaTrack()">
+	<img src="../grumps.png" width="60%" onClick="gaTrack()">
 	</div>
 	<div class="utility-block url-block" id="from-url"></div>
 </div>
