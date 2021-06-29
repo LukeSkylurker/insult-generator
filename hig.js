@@ -1,6 +1,11 @@
 function randomItemsHig() {
 
-ga('send', 'event', 'highbrow', 'click', 'fun', 'lots');
+if ("ga" in window) {
+    tracker = ga.getAll()[0];
+    if (tracker)
+        tracker.send("event", "Generate", "Generate HB");
+}
+
 console.log('changes');
 var insultee;
 console.log($('#insultee').val());
