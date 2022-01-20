@@ -175,6 +175,7 @@ if ("ga" in window) {
 	const canvas = $('canvas').html();
 </script>
 <script>function myVoice() {
+  responsiveVoice.setDefaultVoice("US English Male");
   responsiveVoice.speak(document.getElementById('from-url').innerHTML);
 }</script>
 <script>
@@ -184,6 +185,7 @@ function urlCopyToClipBoard() {
 }
 </script>
 <script src="https://code.responsivevoice.org/responsivevoice.js?key=PT0jTJCu"></script>
+
 <!--
 <button onclick="getImage()" id="create-img">Create Save-able Image</button><button>Copy Url</button>-->
 
