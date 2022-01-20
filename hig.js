@@ -27,7 +27,7 @@ var randomType1 = typeA[Math.floor(Math.random() * typeA.length)];
 console.log(randomType1);
 var finalType = randomType1;
 
-var lastA = ["clot","golem","lump","dunce","dolt","nit","dullard","cluck","bane","plonk","prig","laggard","cretin","dunderhead","stooge","imp","oaf","ox","goon","cad","churl","philistine","lummox"];22
+var lastA = ["clot","golem","lump","dunce","dolt","nit","dullard","cluck","snollygoster","bane","ninnyhammer","lickspittle","plonk","prig","cockalorum","pillock","laggard","cretin","dunderhead","stooge","imp","oaf","ox","goon","cad","churl","philistine","lummox"];22
 var randomLast1 = lastA[Math.floor(Math.random() * lastA.length)];
 console.log(randomLast1);
 var finalLast = randomLast1;
@@ -42,7 +42,7 @@ var momSecond = momB[Math.floor(Math.random() * momB.length)];
 console.log(momSecond);
 var finalMomB = momSecond;
 
-var momC = ["strumpet","tramp","courtesan","codger","hussy","plot","harlequin","trouser-rouser","smock","transient","gutterpup","floozy","flake","loon","glut","frump","blot","paunch"]; 16
+var momC = ["strumpet","tramp","courtesan","codger","hussy","plot","harlequin","mumpsimus","saltimbanco","trouser-rouser","piker","mooncalf","smock","transient","gutterpup","floozy","rube","berk","hob","flake","loon","glut","frump","blot","paunch"]; 16
 var momThird = momC[Math.floor(Math.random() * momC.length)];
 console.log(momThird);
 var finalMomC = momThird;
